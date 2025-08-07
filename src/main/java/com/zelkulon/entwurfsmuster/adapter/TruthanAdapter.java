@@ -5,19 +5,23 @@
 package com.zelkulon.entwurfsmuster.adapter;
 
 public class TruthanAdapter implements Ente {
-    public TruthanAdapter(WilderTruthan truthan) {
+    Truthan truthan;
+
+    public TruthanAdapter(Truthan truthan) {
+    this.truthan = truthan;
     }
 
-    public TruthanAdapter() {
-    }
 
     @Override
     public void quaken() {
-
+        truthan.kollern();
     }
 
     @Override
     public void fliegen() {
+        for (int i = 0; i < 5; i++) {
 
+            truthan.fliegen();
+        }
     }
 }

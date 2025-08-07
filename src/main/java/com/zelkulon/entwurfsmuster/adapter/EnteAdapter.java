@@ -6,7 +6,7 @@ package com.zelkulon.entwurfsmuster.adapter;
 
 import java.util.Random;
 
-public class EnteAdapter implements Ente {
+public class EnteAdapter implements Truthan {
     Ente ente;
     Random zufall;
 
@@ -16,7 +16,7 @@ public class EnteAdapter implements Ente {
     }
 
     @Override
-    public void quaken() {
+    public void kollern() {
         ente.quaken();
     }
 

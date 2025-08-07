@@ -4,13 +4,13 @@
  **/
 package com.zelkulon.entwurfsmuster.adapter;
 
-public class WilderTruthan {
-    public WilderTruthan() {
-    }
+public class WilderTruthan implements Truthan{
 
     public void kollern() {
+        System.out.println("Koller koller");
     }
 
     public void fliegen() {
+        System.out.println("Ich fliege nur kurze Strecken");
     }
 }

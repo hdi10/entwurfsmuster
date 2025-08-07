@@ -5,7 +5,7 @@
 package com.zelkulon.entwurfsmuster.adapter.ente;
 
 import com.zelkulon.entwurfsmuster.adapter.Ente;
-import com.zelkulon.entwurfsmuster.adapter.Stockente;
+import com.zelkulon.entwurfsmuster.adapter.StockEnte;
 import com.zelkulon.entwurfsmuster.adapter.TruthanAdapter;
 import com.zelkulon.entwurfsmuster.adapter.WilderTruthan;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +20,7 @@ public class EntenTests {
 
     @Test
     void gutTestEnte1(){
-     Stockente duck = new Stockente();
+     StockEnte duck = new StockEnte();
 
      WilderTruthan truthan = new WilderTruthan();
      Ente truthanAdapter = new TruthanAdapter(truthan);
@@ -32,6 +32,10 @@ public class EntenTests {
      truthan.fliegen();
 
      log.info("Die Ente macht ...");
+     Hilfsklasser hilfe1 = new Hilfsklasser(duck);
+
+     log.info("Der TruthahnAdapter sagt ....");
+     Hilfsklasser hilfe2 = new Hilfsklasser(truthanAdapter);
 
 
 
