@@ -8,6 +8,7 @@ import com.zelkulon.entwurfsmuster.adapter.Ente;
 import com.zelkulon.entwurfsmuster.adapter.StockEnte;
 import com.zelkulon.entwurfsmuster.adapter.TruthanAdapter;
 import com.zelkulon.entwurfsmuster.adapter.WilderTruthan;
+import com.zelkulon.entwurfsmuster.adapter.ente.hilfklasse.Hilfsklasser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -25,16 +26,16 @@ public class EntenTests {
      WilderTruthan truthan = new WilderTruthan();
      Ente truthanAdapter = new TruthanAdapter(truthan);
 
-     Logger logger = LoggerFactory.getLogger(EntenTests.class);
+     Logger log = LoggerFactory.getLogger(EntenTests.class);
      log.info("Der Truthan macht ...");
 
      truthan.kollern();
      truthan.fliegen();
 
-     log.info("Die Ente macht ...");
+        System.out.println("Die Ente macht ...");
      Hilfsklasser hilfe1 = new Hilfsklasser(duck);
 
-     log.info("Der TruthahnAdapter sagt ....");
+        System.out.println("Der TruthahnAdapter sagt ....");
      Hilfsklasser hilfe2 = new Hilfsklasser(truthanAdapter);
 
 
