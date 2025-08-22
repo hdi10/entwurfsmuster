@@ -7,9 +7,6 @@
 package com.zelkulon.entwurfsmuster.factorymethod.headfirst.pizzafm;
 //TODO Diese Klasse Testen
 
-import com.zelkulon.entwurfsmuster.factorymethod.headfirst.pizzas.CheesePizza;
-import com.zelkulon.entwurfsmuster.factorymethod.headfirst.pizzas.VeggiePizza;
-
 import java.util.Map;
 import java.util.function.Supplier;
 

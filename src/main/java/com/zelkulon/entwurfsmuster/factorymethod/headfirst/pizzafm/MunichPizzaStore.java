@@ -7,7 +7,7 @@
 package com.zelkulon.entwurfsmuster.factorymethod.headfirst.pizzafm;
 
 public class MunichPizzaStore extends PizzaStore {
-    Pizza createPizza(String item) {
+    /*Pizza createPizza(String item) {
         if(item.equals("cheese")) {
             return new MunichStyleCheesePizza();
         }else if(item.equals("veggie")) {
@@ -17,9 +17,9 @@ public class MunichPizzaStore extends PizzaStore {
         }else if(item.equals("pepperoni")) {
             return new MunichStylePepperoniPizza();
         } else return null;
-    }
+    }*/
 
-    Pizza createPizzaSwitched(String item) {
+    Pizza createPizza(String item) {
         return switch(item) {
             case "cheese" -> new MunichStyleCheesePizza();
             case "veggie" -> new MunichStyleVeggiePizza();

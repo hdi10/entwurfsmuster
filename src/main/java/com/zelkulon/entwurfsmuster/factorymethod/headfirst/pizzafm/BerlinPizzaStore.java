@@ -8,7 +8,7 @@ package com.zelkulon.entwurfsmuster.factorymethod.headfirst.pizzafm;
 
 public class BerlinPizzaStore extends PizzaStore {
 
-    Pizza createPizza(String item) {
+    /*Pizza createPizza(String item) {
         if(item.equals("cheese")) {
             return new BLNStyleCheesePizza();
         }else if(item.equals("veggie")) {
@@ -18,9 +18,9 @@ public class BerlinPizzaStore extends PizzaStore {
         }else if(item.equals("pepperoni")) {
             return new BLNStylePepperoniPizza();
         } else return null;
-    }
+    }*/
 
-    Pizza createPizzaSwitched(String item) {
+    Pizza createPizza(String item) {
         return switch(item) {
             case "cheese" -> new BLNStyleCheesePizza();
             case "veggie" -> new BLNStyleVeggiePizza();
