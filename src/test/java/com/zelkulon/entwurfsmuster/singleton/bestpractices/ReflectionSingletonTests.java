@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import java.lang.reflect.Constructor;
 
 
-public class ReflectionSingletonTestMachine {
+public class ReflectionSingletonTests {
 
     @Test
     public void test() {

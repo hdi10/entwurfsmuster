@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
-public class SingletonSerializedTestMachine {
+public class SingletonSerializedTests {
 
     @Test
     public void testSingletonDestroySingletonPattern() throws FileNotFoundException, IOException, ClassNotFoundException {
