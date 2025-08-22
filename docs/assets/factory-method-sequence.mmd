@@ -1,0 +1,16 @@
+%% Factory Method – Sequence Diagram (Mermaid)
+sequenceDiagram
+    autonumber
+    actor Client
+    participant Creator as Creator
+    participant ConcreteCreator as ConcreteCreator
+    participant Product as Product
+    participant ConcreteProduct as ConcreteProduct
+
+    Client->>Creator: anOperation()
+    note over Creator: anOperation() ruft die Factory Method auf
+    Creator->>ConcreteCreator: factoryMethod()
+    ConcreteCreator-->>Creator: Product (ConcreteProduct-Instanz)
+    Creator->>Product: use()
+    Client-->>Creator: Ergebnis erhalten
+

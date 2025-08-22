@@ -39,7 +39,21 @@ classDiagram
         + static getInstance() Singleton
     }
 ```
-
+---
+## Sequenzdiagramm
+```mermaid
+%% Singleton – Sequence Diagram (Mermaid)
+sequenceDiagram
+    participant Client
+    participant Singleton
+    Client->>Singleton: getInstance()
+    alt Instance exists?
+        Singleton-->>Client: return existing instance
+    else Create new
+        Singleton->>Singleton: create instance
+        Singleton-->>Client: return new instance
+    end
+```
 ---
 
 ## Teilnehmer
