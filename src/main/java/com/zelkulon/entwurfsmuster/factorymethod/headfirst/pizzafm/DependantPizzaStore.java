@@ -5,7 +5,7 @@
  * path to this file is: src/main/java/com/zelkulon/entwurfsmuster/factorymethod/headfirst/pizzafm
  **/
 package com.zelkulon.entwurfsmuster.factorymethod.headfirst.pizzafm;
-//TODO Diese Klasse Testen
+
 
 import java.util.Map;
 import java.util.function.Supplier;
